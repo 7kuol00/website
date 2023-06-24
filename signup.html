@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create A New Account</title>
+  <link rel="stylesheet" href="./signup.css" />
+</head>
+
+<body>
+  <form onsubmit="return handleSubmit(event)">
+    <h5>Create a New Account</h5>
+    <!-- Usernamer -->
+    <label for="username">
+      <input type="text" placeholder="Username" onchange="handleUsernameChange(this)" />
+    </label>
+    <br />
+    <!-- First Name -->
+    <label for="firstname">
+      <input type="text" placeholder="First Name" onchange="handleFirstnameChange(this)" />
+    </label>
+    <!-- Last Name -->
+    <label for="lastname">
+      <input type="text" placeholder="Last Name" onchange="handleLastnameChange(this)" />
+    </label>
+    <br />
+    <!-- Password -->
+    <label for="password">
+      <input type="password" placeholder="Password" onchange="handlePasswordChange(this)" />
+    </label>
+    <label for="confirm_password">
+      <input type="password" placeholder="Confirm Password" onchange="handleConfirmPasswordChange(this)" />
+    </label>
+    <br />
+    <label for="email">
+      <input type="email" placeholder="Email Address" onchange="handleEmailChange(this)" />
+    </label>
+    <br />
+    <br />
+    <button type="submit">Create Account</button>
+  </form>
+</body>
+<div class="ball"></div>
+<script src="./singup.js"></script>
+
+</html>
